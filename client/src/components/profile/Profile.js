@@ -42,11 +42,8 @@ const Profile = ({
               <h2 className='text-primary'>Experience</h2>
               {profile.experiences.length > 0 ? (
                 <Fragment>
-                  {profile.experiences.map(experience => (
-                    <ProfileExperience
-                      key={experience._id}
-                      experience={experience}
-                    />
+                  {profile.experiences.map(exp => (
+                    <ProfileExperience key={exp._id} experience={exp} />
                   ))}
                 </Fragment>
               ) : (
